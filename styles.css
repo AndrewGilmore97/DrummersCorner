@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(58, 42, 9) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.startMenu {
+    display:none;
+}
+
+.drumPlatform {
+    margin-top:100px;
+    text-align: center;
+    opacity:0.8; /*Complements the gradient by dulling slightly everything*/
+}
+
+.drumKit {
+    top: 150px;
+    /* background-color: rgb(93, 124, 120); */
+    position:relative;
+}
+
+.mainText {
+    color: white;
+    text-shadow: 2px 2px rgb(123, 123, 224);
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.drum {
+    text-shadow: 2px 2px rgb(123, 123, 224);
+    font-size: 4rem;
+    font-weight: 700;
+    border-radius: 15px;
+    border: 5px solid rgb(123, 123, 224);
+    margin: 5px 5px 10px;
+    height:200px;
+    width: 200px;
+    background-size:cover;
+}
+
+.drum:hover {
+    cursor: pointer;
+    box-shadow: 2px 5px 20px white;
+
+}
+
+.bigDrum {
+    height:220px;
+    width:220px;
+}
+
+.kick {
+    background-image: url("images/kick.png");
+}
+
+.snare {
+    background-image: url("images/snare.png");
+}
+
+.crash {
+    background-image: url("images/crash.png");
+}
+
+.tom1 {
+    background-image: url("images/tom1.png");
+}
+
+.tom2 {
+    background-image: url("images/tom2.png");
+}
+
+.tom3 {
+    background-image: url("images/tom3.png");
+}
+
+.tom4 {
+    background-image: url("images/tom4.png");
+}
