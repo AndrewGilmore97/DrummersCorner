@@ -46,7 +46,12 @@ body {
 .drum:hover {
     cursor: pointer;
     box-shadow: 2px 5px 20px white;
+    color:rgb(27, 27, 27);
 
+}
+
+.clicked {
+    opacity: 0.4;
 }
 
 .bigDrum {
