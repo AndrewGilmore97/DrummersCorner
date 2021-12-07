@@ -6,6 +6,19 @@ body {
     width: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+.bgMemory {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(20, 58, 9) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.gameOver {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(255, 3, 3) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .startMenu {
@@ -18,33 +31,61 @@ body {
     opacity:0.8; /*Complements the gradient by dulling slightly everything*/
 }
 
-.drumKit {
-    top: 150px;
-    /* background-color: rgb(93, 124, 120); */
-    position:relative;
-}
-
 .mainText {
     color: white;
     text-shadow: 2px 2px rgb(123, 123, 224);
     font-size: 5rem;
     font-weight: 700;
+    cursor:default;
+}
+
+.subText {
+    color: white;
+    text-shadow: 2px 2px rgb(123, 123, 224);
+    font-size: 2rem;
+    font-weight: 400;
+    display: inline;
+    cursor:default;
+}
+
+.subLevel {
+    margin-left: 200px;
+}
+
+.levelTitle {
+    display:none;
+}
+
+.messageText {
+    color: white;
+    text-shadow: 2px 2px rgb(123, 123, 224);
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-top: 10px;
+    display: none;
+    cursor:default; 
+}
+
+.drumKit {
+    top: 40px;
+    /* background-color: rgb(93, 124, 120); */
+    position:relative;
 }
 
 .drum {
-    text-shadow: 2px 2px rgb(123, 123, 224);
+    /* text-shadow: 2px 2px rgb(123, 123, 224);
+    border: 5px solid rgb(123, 123, 224); */
     font-size: 4rem;
     font-weight: 700;
     border-radius: 15px;
-    border: 5px solid rgb(123, 123, 224);
     margin: 5px 5px 10px;
-    height:200px;
-    width: 200px;
+    height:180px;
+    width: 180px;
     background-size:cover;
+    cursor: pointer;
 }
 
 .drum:hover {
-    cursor: pointer;
     box-shadow: 2px 5px 20px white;
     color:rgb(27, 27, 27);
 
@@ -52,37 +93,84 @@ body {
 
 .clicked {
     opacity: 0.4;
+    cursor: default;
 }
 
 .bigDrum {
-    height:220px;
-    width:220px;
+    height:200px;
+    width:200px;
 }
 
-.kick {
-    background-image: url("images/kick.png");
+/* Top row of drums*/
+
+.tom1 {
+    background-image: url("images/tom1.png");
+    text-shadow: 2px 2px rgb(235, 71, 49);
+    border: 5px solid rgb(235, 71, 49);
 }
 
 .snare {
     background-image: url("images/snare.png");
-}
-
-.crash {
-    background-image: url("images/crash.png");
-}
-
-.tom1 {
-    background-image: url("images/tom1.png");
+    text-shadow: 2px 2px rgb(223, 127, 17);
+    border: 5px solid rgb(223, 127, 17);
 }
 
 .tom2 {
     background-image: url("images/tom2.png");
+    text-shadow: 2px 2px rgb(255, 243, 82);
+    border: 5px solid rgb(255, 243, 82);
 }
+
+.crash {
+    background-image: url("images/crash.png");
+    text-shadow: 2px 2px rgb(54, 245, 16);
+    border: 5px solid rgb(54, 245, 16);
+}
+
+/* Bottom row of drums */
 
 .tom3 {
     background-image: url("images/tom3.png");
+    text-shadow: 2px 2px rgb(16, 245, 245);
+    border: 5px solid rgb(16, 245, 245);
+}
+
+.kick {
+    background-image: url("images/kick.png");
+    text-shadow: 2px 2px rgb(16, 31, 245);
+    border: 5px solid rgb(16, 31, 245);
 }
 
 .tom4 {
     background-image: url("images/tom4.png");
+    text-shadow: 2px 2px rgb(161, 16, 245);
+    border: 5px solid rgb(161, 16, 245);
+}
+
+.freeStl {
+    text-shadow: 2px 2px rgb(123, 123, 224);
+    border: 5px solid rgb(123, 123, 224);
+}
+
+
+/*Buttons*/
+
+.buttonLayer {
+    margin-top: 100px;
+}
+
+.smallBtn {
+    text-shadow: 1px 1px rgb(123, 123, 224);
+    font-size: 1.2rem;
+    border-radius: 15px;
+    border: 3px solid rgb(123, 123, 224);
+    margin: 5px 5px 10px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.smallBtn:hover {
+    box-shadow: 2px 5px 15px white;
+    color:rgb(27, 27, 27);
+
 }
