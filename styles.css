@@ -10,7 +10,7 @@ body {
 }
 
 .bgMemory {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(20, 58, 9) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(27, 66, 124) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -46,10 +46,11 @@ body {
     font-weight: 400;
     display: inline;
     cursor:default;
+    opacity: 0.6;
 }
 
 .subLevel {
-    margin-left: 200px;
+    margin-left: 320px;
 }
 
 .levelTitle {
@@ -58,7 +59,7 @@ body {
 
 .messageText {
     color: white;
-    text-shadow: 2px 2px rgb(123, 123, 224);
+    text-shadow: 2px 2px rgb(63, 6, 6);
     font-size: 1.4rem;
     font-weight: 400;
     padding-top: 10px;
